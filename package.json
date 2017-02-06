@@ -1,0 +1,50 @@
+{
+  "name": "eslint-config-opengg",
+  "version": "1.0.0",
+  "description": "OpenGG's base JS ESLint config, following our styleguide",
+  "main": "index.js",
+  "scripts": {
+    "prelint": "editorconfig-tools check * rules/*",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent lint",
+    "travis": "npm run --silent lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenGG/eslint-config-opengg.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "OpenGG (https://github.com/OpenGG)",
+  "contributors": [
+    "OpenGG (https://github.com/OpenGG)"
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/OpenGG/eslint-config-opengg/issues"
+  },
+  "homepage": "https://github.com/OpenGG/eslint-config-opengg",
+  "engines": {
+    "node": ">= 4"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^3.15.0",
+    "eslint-plugin-no-async-without-await": "^1.2.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-no-async-without-await": "^1.2.0"
+  }
+}
