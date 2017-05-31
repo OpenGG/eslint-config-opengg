@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-opengg",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "OpenGG's base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "pretest": "npm run lint",
-    "test": "node test/index.js"
+    "test": "node test/index.js",
+    "precommit": "npm run test",
+    "prepublishOnly": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -38,7 +40,8 @@
     "eslint": "^3.19.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-no-async-without-await": "^1.2.0",
-    "pify": "^2.3.0"
+    "husky": "^0.13.4",
+    "pify": "^3.0.0"
   },
   "peerDependencies": {
     "eslint-plugin-import": "^2.3.0",
