@@ -7,11 +7,13 @@ const {
   join,
 } = require('path');
 
-const pify = require('pify');
+const {
+  promisify,
+} = require('util');
 
-const readdirPromise = pify(readdir);
+const readdirPromise = promisify(readdir);
 
-const readFilePromise = pify(readFile);
+const readFilePromise = promisify(readFile);
 
 const readCases =
   async (dir) => {

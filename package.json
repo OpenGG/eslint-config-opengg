@@ -40,8 +40,7 @@
     "eslint": "^4.0.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-no-async-without-await": "^1.2.0",
-    "husky": "^0.13.4",
-    "pify": "^3.0.0"
+    "husky": "^0.13.4"
   },
   "peerDependencies": {
     "eslint-plugin-import": "^2.3.0",
