@@ -1,0 +1,2 @@
+if (process) { process.cwd();
+}

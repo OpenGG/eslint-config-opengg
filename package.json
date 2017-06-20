@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-opengg",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "OpenGG's base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "eclint": "^2.1.0",
-    "eslint": "^3.19.0",
+    "eslint": "^4.0.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-no-async-without-await": "^1.2.0",
     "husky": "^0.13.4",

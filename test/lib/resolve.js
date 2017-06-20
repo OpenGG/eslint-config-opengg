@@ -4,5 +4,5 @@ const {
 
 module.exports =
   base =>
-  path =>
-  join(base, path);
+    path =>
+      join(base, path);

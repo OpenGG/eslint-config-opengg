@@ -33,5 +33,9 @@ module.exports = {
         message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
     ],
+    'brace-style': ['error', '1tbs', {
+      allowSingleLine: false,
+    }],
+    curly: ['error', 'all'],
   },
 };

@@ -1,3 +1,8 @@
+3.0.0 / 2017-06-20
+==================
+- [beaking] Set `brace-style` to `['error', '1tbs', { allowSingleLine: false, }]`
+- [beaking] Set `curly` to `['error', 'all']`
+
 2.0.0 / 2017-05-26
 ==================
 - [beaking] based on `eslint-config-airbnb-base@11.2.0`

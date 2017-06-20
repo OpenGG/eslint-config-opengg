@@ -13,3 +13,5 @@ Almost the same, but not quite.
 0. Set `style/func-style` to `['error', 'expression', { allowArrowFunctions: true }]`
 0. Set `style/no-plusplus` to `['error', { allowForLoopAfterthoughts: true }]`
 0. Remove `ForOfStatement` in `style/no-restricted-syntax`
+0. Set `brace-style` to `['error', '1tbs', { allowSingleLine: false, }]`
+0. Set `curly` to `['error', 'all']`

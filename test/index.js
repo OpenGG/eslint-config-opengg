@@ -15,6 +15,12 @@ const main = async () => {
 
   const formatter = cli.getFormatter('compact');
 
+  const config = cli.getConfigForFile(__filename);
+
+  console.log(
+    JSON.stringify(config, null, '\t')
+  );
+
   await Promise.all(
     ['bad', 'good'].map(
       async (type) => {
