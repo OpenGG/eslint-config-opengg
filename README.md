@@ -1,11 +1,20 @@
 # eslint-config-opengg
 [![Build Status](https://travis-ci.org/OpenGG/eslint-config-opengg.svg?branch=master)](https://travis-ci.org/OpenGG/eslint-config-opengg)
 
-Style guide based on `eslint-config-airbnb-config`.
+Style guide based on `eslint-config-airbnb-base`.
 
 Almost the same, but not quite.
 
-# Differences
+## Usage
+
+```bash
+npm install --save-dev \
+  eslint-config-opengg \
+  eslint-plugin-import \
+  eslint-plugin-no-async-without-await
+```
+
+## Differences with `eslint-config-airbnb-base`
 
 0. Add `extras/no-async-without-await/no-async-without-await` rule
 0. Set `errors/comma-dangle.functions` to `'never'`
