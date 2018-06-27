@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
-const resolve = require('./lib/resolve')(__dirname);
-
-const readCases = require('./lib/read-cases');
-
 const {
   CLIEngine,
 } = require('eslint');
+
+const resolve = require('./lib/resolve')(__dirname);
+
+const readCases = require('./lib/read-cases');
 
 const main = async () => {
   const cli = new CLIEngine({
@@ -42,8 +42,8 @@ const main = async () => {
             const reportText = formatter(report.results).replace(folder, '').replace(/\n+/g, ' ');
             if (bad) {
               if (
-                report.errorCount === 1 &&
-                report.warningCount === 0
+                report.errorCount === 1
+                && report.warningCount === 0
               ) {
                 console.log(`[passes]${type}/${name} reporting errors: `, reportText);
               } else {
@@ -51,8 +51,8 @@ const main = async () => {
                 process.exitCode = -2;
               }
             } else if (
-              report.errorCount === 0 &&
-              report.warningCount === 0
+              report.errorCount === 0
+              && report.warningCount === 0
             ) {
               console.log(`[passes]${type}/${name} not reporting errors. `, reportText);
             } else {

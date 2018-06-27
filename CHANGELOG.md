@@ -1,3 +1,9 @@
+4.0.0 / 2018-06-27
+==================
+
+- Upgrade deps
+- Upgrade to eslint@5, eslint-config-airbnb-base@13
+
 3.0.0 / 2017-06-20
 ==================
 - [beaking] Set `brace-style` to `['error', '1tbs', { allowSingleLine: false, }]`

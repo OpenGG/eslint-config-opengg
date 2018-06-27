@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-opengg",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "OpenGG's base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -33,12 +33,12 @@
   },
   "homepage": "https://github.com/OpenGG/eslint-config-opengg",
   "dependencies": {
-    "eslint-config-airbnb-base": "^11.2.0"
+    "eslint-config-airbnb-base": "^13.0.0"
   },
   "devDependencies": {
-    "eclint": "^2.1.0",
-    "eslint": "^4.1.1",
-    "eslint-plugin-import": "^2.6.1",
+    "eclint": "^2.7.0",
+    "eslint": "^5.0.1",
+    "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-no-async-without-await": "^1.2.0",
     "husky": "^0.14.3"
   },
